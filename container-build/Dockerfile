@@ -3,7 +3,7 @@ FROM quay.io/redhattraining/httpd-parent
 
 EXPOSE 8080
 
-io.opnshift.expose-services="8080:http"
+io.openshift.expose-services="8080:http"
 
 RUN sed -i "s/Listen 80/Listen g/8080" /etc/httpd/conf/httpd.conf
 
