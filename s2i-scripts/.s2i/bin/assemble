@@ -9,13 +9,11 @@ echo "---> Enabling s2i support in httpd24 image"
 config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
+cp ./ ./
+echo "my name is Dhritiman" >> info.html
+DATE=$(date "+%d-%b-%Y")
+echo "todays date is: $DATE"
 
-echo "---> Installing application source"
-cp -Rf /tmp/src/*.html ./
-DATE=$(date "+%b %d, %Y")
-echo "my name is dhritiman" >> ./info.html
-echo "now the date is: $DATE" >> ./info.html
-echo "my httpd version $HTTPD_VERSION" >> ./info.html
 ######## CUSTOMIZATION ENDS HERE ############
 
 if [ -d ./httpd-cfg ]; then
