@@ -10,10 +10,9 @@ config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
 cp -Rf /tmp/src/ ./
-echo "my name is Dhritiman" >> ./info.html
-DATE=$(date "+%d-%b-%Y")
+echo "my name is dhritiman: " >> ./info.html
+DATE=$(date "+%d/%M/%y")
 echo "todays date is: $DATE" >> ./info.html
-
 ######## CUSTOMIZATION ENDS HERE ############
 
 if [ -d ./httpd-cfg ]; then
