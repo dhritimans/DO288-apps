@@ -12,7 +12,7 @@ config_s2i
 cp ./ ./
 echo "my name is Dhritiman" >> info.html
 DATE=$(date "+%d-%b-%Y")
-echo "todays date is: $DATE"
+echo "todays date is: $DATE" >> info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
 
